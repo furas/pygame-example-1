@@ -128,7 +128,8 @@ class Player(pygame.sprite.Sprite):  # PEP8: UpperCaseName for classes - `class 
                 self.image = self.walk['left'][frame]
                 self.walk_count += 1
 
-        elif self.up:
+        # if you use `elif` then it will not move diagonal.
+        if self.up:
             if self.rect.top > win.get_rect().top:  #  don' leave map/screen
                 # move object
                 self.rect.y -= self.vel
