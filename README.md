@@ -7,4 +7,4 @@ Example for answer on Stackoverflow: [how do i scroll the elements with the back
 
 ---
 
-Video registered with free [OBS Studio](https://obsproject.com/). Crop and converted to animated GIF with [ffmpeg](https://ffmpeg.org/)
+Video recorded with free [OBS Studio](https://obsproject.com/). Crop and converted to animated GIF with  free [ffmpeg](https://ffmpeg.org/)
