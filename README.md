@@ -4,9 +4,9 @@ Example for answer on Stackoverflow: [how do i scroll the elements with the back
 
 ## Code
 
-Original code from question in `main-original.py` (not run). 
+Original code from question in `main-original.py` (it not run). 
 
-Code after modifications in `main-mod.py` (works).
+Code after modifications in `main-mod.py` (it works).
 
 ## Images
 
@@ -20,4 +20,8 @@ You can find all `SVG` file in `images/svg - inkscape`.
 
 Video recorded with free [OBS Studio](https://obsproject.com/). 
 
-Crop and converted to animated GIF with free [ffmpeg](https://ffmpeg.org/),
+Croped and converted to `animated GIF` with free [ffmpeg](https://ffmpeg.org/),
+
+```bash
+ffmpeg -i input.mkv -ss 00:00:04 -to 00:00:15.5 -vf scale=562:300 output.gif
+```    
