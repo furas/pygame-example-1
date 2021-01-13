@@ -18,7 +18,7 @@ You can find all `SVG` file in `images/svg - inkscape`.
 
 ![1](https://github.com/furas/pygame-example-1/blob/main/output.gif)
 
-Video recorded with free [OBS Studio](https://obsproject.com/). 
+Video recorded with free [OBS Studio](https://obsproject.com/) in size `1912x1020` as `input.mkv` (not included in repo). 
 
 Croped and converted to `animated GIF` with free [ffmpeg](https://ffmpeg.org/),
 
