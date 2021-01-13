@@ -250,12 +250,12 @@ class Background(pygame.sprite.Sprite):  # PEP8: UpperCaseName for classes
 # --- functions --- (lower_case_names)
 
 def load_config():
-    with open(CONFIG_PATH, "rb") as pickle_file:
+    with open(os.path.join(HOME_PATH, CONFIG_PATH), "rb") as pickle_file:
         data = pickle.load(pickle_file)
     return data
     
 def save_config(data):
-    with open(CONFIG_PATH, "wb") as pickle_file:
+    with open(os.path.join(HOME_PATH, CONFIG_PATH), "wb") as pickle_file:
         pickle.dump(data, pickle_file)
 
 def game_state():
@@ -283,7 +283,7 @@ def game_state():
         keys = pygame.key.get_pressed()
 
         if keys[pygame.K_p]:
-            config = {"x": player.x, "y": player.y}
+            config = {"x": player.rect.x, "y": player.rect.y}
             save_config(config)
             
         player.handle_keys(keys)
